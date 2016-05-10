@@ -1,0 +1,16 @@
+current directory: /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/sepandassadi/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20160510-99888-yc4lme.rb extconf.rb
+creating Makefile
+
+current directory: /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20160510-99888-6hcwxg
