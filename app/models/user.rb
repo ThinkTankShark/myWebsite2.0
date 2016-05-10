@@ -41,4 +41,12 @@ class User < ActiveRecord::Base
     end
   end
 
+  def google_oauth2
+    identities.where( :provider => "google_oauth2" ).first
+  end
+
+  def google_oauth2_client
+    @google_oauth2_client ||= GoogleAppsClient.client( google_oauth2 )
+  end
+
 end

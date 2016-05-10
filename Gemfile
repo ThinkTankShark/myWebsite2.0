@@ -30,6 +30,32 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'puma'
+gem 'rails_12factor'
+gem 'haml-rails'
+gem 'bootstrap-sass'
+gem 'modernizr-rails'
+gem 'meta-tags', require: 'meta_tags'
+gem 'responders', '~> 2.0'
+gem 'bh'
+gem 'gibbon'
+gem 'devise', '~> 3.4'
+gem 'devise_invitable'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
+gem 'octokit'
+gem 'omniauth-instagram'
+gem 'instagram'
+gem 'omniauth-twitter'
+gem 'twitter'
+gem 'activeadmin', github: 'activeadmin', branch: 'master'
+gem 'inherited_resources'
+gem 'dateslices'
+gem 'jazz_hands', github: 'danrabinowitz/jazz_hands', branch: 'use-newer-version-of-pry', groups: [:development, :test]
+gem 'omniauth-google-oauth2'
+gem 'google-api-client'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -48,9 +74,6 @@ group :development do
   gem 'happy_seed'
 end
 
-gem 'puma'
-gem 'rails_12factor'
-gem 'haml-rails'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec'
@@ -78,23 +101,3 @@ end
 group :production do
   gem 'pg'
 end
-
-gem 'bootstrap-sass'
-gem 'modernizr-rails'
-gem 'meta-tags', require: 'meta_tags'
-gem 'responders', '~> 2.0'
-gem 'bh'
-gem 'gibbon'
-gem 'devise', '~> 3.4'
-gem 'devise_invitable'
-gem 'omniauth'
-gem 'omniauth-facebook'
-gem 'omniauth-github'
-gem 'octokit'
-gem 'omniauth-instagram'
-gem 'instagram'
-gem 'omniauth-twitter'
-gem 'twitter'
-gem 'activeadmin', github: 'activeadmin', branch: 'master'
-gem 'inherited_resources'
-gem 'dateslices'
