@@ -13,7 +13,6 @@
 // @import 'globals/fonts';
 // @import 'globals/variables';
 
-
 // // // --------------Bootstrap-----------------------------
 @import 'bootstrap-sprockets';
 // @import 'bootstrap';
@@ -21,8 +20,7 @@
 
 // // --------------Global definitions--------------------
 // // For example (add your own!!):
-// @import 'globals/mixins';
-
+@import 'globals/mixins';
 
 // // --------------Shared styles-------------------------
 // // Common base CSS modifications. For example:

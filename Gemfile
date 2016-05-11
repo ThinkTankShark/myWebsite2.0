@@ -54,8 +54,8 @@ gem 'activeadmin', github: 'activeadmin', branch: 'master'
 gem 'inherited_resources'
 gem 'dateslices'
 gem 'jazz_hands', github: 'danrabinowitz/jazz_hands', branch: 'use-newer-version-of-pry', groups: [:development, :test]
-# gem 'omniauth-google-oauth2'
-# gem 'google-api-client'
+gem 'omniauth-google-oauth2'
+gem 'google-api-client'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
