@@ -1,8 +1,27 @@
-%footer#footer
+/ Footer
+%footer.padded
+  / Container
   .container
+    / Social List
     .row
-      .col-xs-6
-        %h3 AppName
-      .col-xs-6.text-right
-        %small.copyright
-          T, Copyright &copy; #{ Date.today.year }
+      .social-list.col-xs-12.col-lg-8.col-lg-offset-2
+        %a{:href => "https://twitter.com/sepandassadi"}
+          %i.social-icon-twitter
+        %a{:href => "https://github.com/thinktankshark"}
+          %i.social-icon-github
+        %a{:href => "https://www.linkedin.com/in/sepandassadi"}
+          %i.social-icon-linkedin
+        %a{:href => "https://www.tumblr.com/blog/sepandassadi"}
+          %i.social-icon-tumblr
+        %a{:href => "https://www.facebook.com/sepand.sam.assadi"}
+          %i.social-icon-facebook
+        %a{:href => "https://www.instagram.com/sepand.assadi/"}
+          %i.social-icon-instagram
+    / END Social List
+    / Copyright
+    .row
+      .social-list.col-xs-12.col-lg-8.col-lg-offset-2
+        %p.copyright © #{ Date.today.year } Sepand Assadi. All rights reserved.
+    / END Copyright
+  / END Container
+/ END Footer

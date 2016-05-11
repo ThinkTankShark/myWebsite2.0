@@ -1,26 +1,87 @@
 - @title = "Sign Up"
-.container
-  .row
-    .center_panel
-      .panel.panel-default.only
+%link{:href => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css", :rel => "stylesheet"}
+  :css
+    html,
+    body {
+        height: 100%;
+    }
+    html {
+        display: table;
+        margin: auto;
+    }
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        width: 600px;
+        padding: 50px;
+    }
+    .margin {
+      margin: 0 !important;
+    }
+  %body.blue
+    = form_for resource, as: resource_name, url: registration_path(resource_name) do |f|
+      #login-page.row
+        .col.s12.z-depth-6.card-panel
+          %form.login-form
+            .row
+              .input-field.col.s12.center
+                %img.responsive-img.valign.profile-image-login{:alt => "", :src => "/assets/logoT.png", :style => "width:150px;height:150px;"}
+                  %h5
+                    %p.center Fill Out The Fields Below To Get Started.
+                  %p.center.login-form-text It only takes a minute.
 
-        .panel-heading
-          Sign up
+              / = devise_error_messages!
+              .row.margin
+                .input-field.col.s12
+                  %i.mdi-social-person-outline.prefix
+                  = f.text_field :name, id:"username", class:"validate", label: false
+                  %label.center-align{:for => "username", class:"center-align"} Name
 
-        .panel-body
+              .row.margin
+                .input-field.col.s12
+                  %i.mdi-social-person-outline.prefix
+                  = f.text_field :username, id:"username", class:"validate", label: false
+                  %label.center-align{:for => "username", class:"center-align"} Username
+              .row.margin
+                .input-field.col.s12
+                  %i.mdi-communication-email.prefix
+                  = f.email_field :email, id:"email", class:"validate", label: false
+                  %label.center-align{:for => "email", class:"center-align"} Email
+              .row.margin
+                .input-field.col.s12
+                  %i.mdi-action-lock-outline.prefix
+                  = f.password_field :password, id:"password", class:"validate", label: false, autocomplete: "off"
+                  %label.center-align{:for => "password"} Password
+              .row.margin
+                .input-field.col.s12
+                  %i.mdi-action-lock-outline.prefix
+                  = f.password_field :password_confirmation, id:"password-again", label: false, autocomplete: "off"
+                  %label.center-align{:for => "password-again"} Re-type password
+              .row
+                .input-field.col.s12
+                  = f.button "Register Now", class:"btn waves-effect waves-light col s12"
+                  %p.margin.center.medium-small.sign-up
+                    - if controller_name != 'sessions'
+                      Already have an account?
+                      = link_to "Login", new_session_path(resource_name)
+                      %br/
+            %p.text-right
+              = render partial: "devise/shared/links"
+      / Post Page - Responsive
 
-          = form_for resource, as: resource_name, url: registration_path(resource_name), layout: :horizontal do |f|
+    /
+      \================================================
+      Scripts
+      \================================================
+    / jQuery Library
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", :type => "text/javascript"}
+    / materialize js
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"}
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            / = devise_error_messages!
-
-            = f.email_field :email, autofocus: true
-            = f.password_field :password, autocomplete: "off"
-            = f.password_field :password_confirmation, autocomplete: "off"
-
-            - if devise_mapping.rememberable?
-              = f.check_box :remember_me
-
-            = f.submit "Sign Up"
-
-          %p.text-right
-            = render partial: "devise/shared/links"
+      ga('create', 'UA-27820211-3', 'auto');
+      ga('send', 'pageview');
