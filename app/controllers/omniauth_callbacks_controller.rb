@@ -15,13 +15,15 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     generic_callback( 'google_oauth2' )
   end
 
+  #For registration without OmniAuth
   def generic_callback( provider )
     @identity = Identity.find_for_oauth env["omniauth.auth"]
-
+    p params
     @user = @identity.user || current_user
     if @user.nil?
       @user = User.create( email: @identity.email || "" )
       @identity.update_attribute( :user_id, @user.id )
+
     end
 
     if @user.email.blank? && @identity.email
