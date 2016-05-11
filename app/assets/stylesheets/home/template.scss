@@ -1,0 +1,96 @@
+/* Body Wrapper */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    float: top;
+    margin: -10px 0px 0px 0px;
+    background-color: white;
+    font-family: Open Sans;
+    position: fixed;
+    width: 100%;
+    text-transform: uppercase;
+    height: 74px;
+    z-index: 10;
+}
+
+#nav-left {
+    margin-top: -5px;
+    margin-left: 25px;
+    float: left;
+}
+
+#nav-left img {
+    height: 74px;
+    padding-top: 15px;
+}
+
+#nav-right {
+    float: right;
+    font-size: 1em;
+    margin-right: 25px;
+}
+
+#home-button {
+    background-color: #e6e6e6;
+    border-bottom: 4px solid #69f0ae;
+}
+
+.button-header {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    width: 100px;
+    display: inline-block;
+}
+
+div a {
+    text-decoration: none;
+    color: black;
+}
+
+.button-header:hover {
+    background-color: #e6e6e6;
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid #69f0ae;
+}
+
+.button-header div:hover {
+    border-bottom: 4px solid #69f0ae;
+}
+
+.button-header a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.button-header a:visited {
+    color: black;
+}
+
+
+/*  Main Wallpaper */
+
+.main-wallpaper {
+    margin: 0px;
+    padding: 80px;
+    height: 200px;
+    width: 100%;
+}
+
+.main-wallpaper img {
+    height: 550px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}

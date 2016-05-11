@@ -10,6 +10,7 @@ class Identity < ActiveRecord::Base
     identity.refreshtoken = auth.credentials.refresh_token
     identity.secrettoken = auth.credentials.secret
     identity.name = auth.info.name
+    identity.nickname = auth.info.username
     identity.email = auth.info.email
     identity.nickname = auth.info.nickname
     identity.image = auth.info.image

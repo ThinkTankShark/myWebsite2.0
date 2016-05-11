@@ -14,4 +14,23 @@ class RegistrationsController < Devise::RegistrationsController
       resource.update_with_password(params)
     end
   end
+
+  #for using general sign up
+  def sign_up_params
+    devise_parameter_sanitizer.sanitize(:sign_up)
+  end
+  #for using general sign up to update
+  def account_update_params
+    devise_parameter_sanitizer.sanitize(:account_update)
+  end
+
+  private
+
+  def sign_up_params
+    params.require(:user).permit(:name, :username, :email, :password, :password_confirmation)
+  end
+
+  def account_update_params
+    params.require(:user).permit(:name, :username, :email, :password, :password_confirmation, :current_password)
+  end
 end
