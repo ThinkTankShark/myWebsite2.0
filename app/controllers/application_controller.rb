@@ -3,8 +3,10 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_filter :authenticate, except: [:index]
+  # before_filter :authenticate, except: [:index]
+  before_filter :authenticate_user!
 
+  #Regular HTTP authentication
   def authenticate
     unless ENV['HTTP_AUTH_USERNAME'].blank? or ENV['HTTP_AUTH_PASSWORD'].blank?
       authenticate_or_request_with_http_basic do |username, password|

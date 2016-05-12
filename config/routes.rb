@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  resource :blogs
 
   root 'home#index'
 
+  resources :blogs
   namespace :admin do
-    # get "/stats" => "stats#stats"
+    get "/stats" => "stats#stats"
     devise_scope :admin_user do
       get '/stats/:scope' => "stats#stats", as: :admin_stats
     end
