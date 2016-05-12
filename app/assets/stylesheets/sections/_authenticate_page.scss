@@ -14,7 +14,6 @@ body {
 
 }
 
-
 .margin {
   margin: 0 !important;
 }
@@ -22,16 +21,16 @@ form p:last-child {
   margin-bottom: 10px;
 }
 .row {
-margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 fieldset.title2 {
-border-top: 1px solid #aaa;
-border-bottom: none;
-border-left: none;
-border-right: none;
-display: block;
-text-align: center;
+    border-top: 1px solid #aaa;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    text-align: center;
 }
 legend {
     width: 60%;
@@ -40,6 +39,6 @@ legend {
     padding: 0px;
     font-size: 15px;
 }
-  fieldset.title2.container {
+fieldset.title2.container {
     padding: 0px;
-  }
+}

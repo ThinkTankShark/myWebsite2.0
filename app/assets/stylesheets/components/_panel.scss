@@ -13,6 +13,9 @@
 //   color: $panel-inverse-color;
 // }
 @media (min-width: 768px) {
+
+}
+@media (min-width: 768px) {
   /* line 379, /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-left {
     float: left !important;
@@ -57,4 +60,11 @@
 
 h2 {
   font-weight: bold;
+}
+
+p.copyright {
+  font-size: 10px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
