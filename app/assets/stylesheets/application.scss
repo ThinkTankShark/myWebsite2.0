@@ -10,12 +10,12 @@
 //   $ bundle show bootstrap-sass
 
 // // These both need to be imported before bootstrap:
-// @import 'globals/fonts';
-// @import 'globals/variables';
+@import 'globals/fonts';
+@import 'globals/variables';
 
 // // // --------------Bootstrap-----------------------------
 @import 'bootstrap-sprockets';
-// @import 'bootstrap';
+@import 'bootstrap';
 
 
 // // --------------Global definitions--------------------
@@ -24,16 +24,16 @@
 
 // // --------------Shared styles-------------------------
 // // Common base CSS modifications. For example:
-// @import 'shared/buttons';
-// @import 'shared/grid';
+@import 'shared/buttons';
+@import 'shared/grid';
 
 
 // // --------------Components----------------------------
 // // Create your own and modify/extend Bootstrap's. For example:
-// @import 'components/panel';
+@import 'components/panel';
 
 
 // --------------Sections------------------------------
 // Page-specific styles. These should *only* be used as a last
 // resort if you really truly can't style your content more generally.
-// @import 'sections/profile_page';
+@import 'sections/profile_page';

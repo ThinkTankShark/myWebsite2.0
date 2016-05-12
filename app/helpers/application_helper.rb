@@ -18,4 +18,8 @@ module ApplicationHelper
   def page_title
     @title || controller_name.gsub( /Controller/, "" ).humanize
   end
+
+  def find_current_user
+    return Identity.find_by(user_id: current_user.id)
+  end
 end

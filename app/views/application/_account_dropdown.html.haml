@@ -1,11 +1,95 @@
-%li.dropdown
-  %a.dropdown-toggle{ "href" => "#", "data-toggle"=>"dropdown", "role" => "button", "aria-expanded"=>"false"}
-    Account <span class="caret"></span>
-  %ul.dropdown-menu
-    - if user_signed_in?
-      = link_to 'Profile', edit_user_registration_path
-      = link_to 'Sign Out', destroy_user_session_path, :method=>:delete
-    - else
-      / CONNECT
-      = link_to 'Sign In', new_user_session_path
-      = link_to 'Sign Up', new_user_registration_path
+:css
+  .navbar {
+    margin-bottom: 0px;
+    background-color: transparent;
+    position:absolute;
+    border:none;
+  }
+  ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  \-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  \-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  \-webkit-transition: all 0.2s;
+  \-moz-transition: all 0.2s;
+  \-ms-transition: all 0.2s;
+  \-o-transition: all 0.2s;
+  transition: all 0.2s;
+  }
+  ul li:hover, ul li a:hover  {
+  color: #565656;
+  text-decoration: none;
+  }
+  ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  \-webkit-box-shadow: none;
+  \-moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  \-webkit-transiton: opacity 0.2s;
+  \-moz-transition: opacity 0.2s;
+  \-ms-transition: opacity 0.2s;
+  \-o-transition: opacity 0.2s;
+  \-transition: opacity 0.2s;
+  }
+  ul li ul li, ul li ul li a {
+  background: #f3f3f3;
+  display: block;
+  color: #777777;
+  }
+  / ul li ul li:hover { background: #666; }
+  ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 10px 10px 5px #888888;
+  }
+
+- if user_signed_in?
+  %ul
+    %li Blog
+    %li
+      Account
+      %ul
+        %li
+          -user = find_current_user
+          -if user.provider == "twitter"
+            Logged in as @
+            =user.nickname
+          -elsif user.provider == "facebook"
+            Logged in as @
+            =user.name
+          -elsif user.provider == "google"
+            Logged in as @
+            =user.email
+          -elsif !current_user.name.blank?
+            Logged in as
+            = current_user.name
+          -elsif !current_user.email.blank?
+            Logged in as
+            = current_user.email
+        =link_to 'Profile', edit_user_registration_path
+        =link_to 'Sign Out', destroy_user_session_path, :method=>:delete
+- else
+  / CONNECT
+  = link_to 'Sign In', new_user_session_path
+  = link_to 'Sign Up', new_user_registration_path
+
