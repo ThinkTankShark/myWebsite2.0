@@ -22,4 +22,8 @@ module ApplicationHelper
   def find_current_user
     return Identity.find_by(user_id: current_user.id)
   end
+  #Return true if current_user is also an admin
+  # def admin?
+  #   return true if !AdminUser.find_by(email: "info@sepandassadi.com").blank?
+  # end
 end
