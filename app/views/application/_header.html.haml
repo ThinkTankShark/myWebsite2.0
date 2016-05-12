@@ -1,4 +1,4 @@
-= navbar position: :static do
-  = horizontal do
+- if controller_name == 'home' || controller_name == 'blogs'
+  = navbar position: :static do
     = nav class: 'navbar-right' do
       = render partial: "application/account_dropdown"

@@ -13,3 +13,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require init
+
+
+//jQuery for fadeout the flash alert boxes
+$(".alert" ).fadeOut(6000);
+$(".alert-success" ).fadeOut(6000);
+$(".alert-danger" ).fadeOut(6000 );

@@ -1,0 +1,44 @@
+html,
+body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px;
+    width: 500px;
+
+}
+
+.margin {
+  margin: 0 !important;
+}
+form p:last-child {
+  margin-bottom: 10px;
+}
+.row {
+    margin-bottom: 0px;
+}
+
+fieldset.title2 {
+    border-top: 1px solid #aaa;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    text-align: center;
+}
+legend {
+    width: 60%;
+    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+fieldset.title2.container {
+    padding: 0px;
+}

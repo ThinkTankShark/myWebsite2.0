@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby -wU
-
-require 'happy_seed/cli'
-
-HappySeed::Cli.start( ARGV )
