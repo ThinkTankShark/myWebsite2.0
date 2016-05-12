@@ -21,7 +21,7 @@
   /* line 382, /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-right {
     float: right !important;
-    margin-right: 10%;
+    margin-right: -10%;
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -38,4 +38,23 @@
 
 .col-lg-8.col-xs-12 {
   padding-left: 15px;
+}
+
+.alert {
+  position: absolute;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.hero h2 {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    /* font-weight: bold; */
+    color: black;
+    font-family: sans-serif;
+}
+
+h2 {
+  font-weight: bold;
 }
