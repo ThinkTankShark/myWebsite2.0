@@ -2,7 +2,12 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :blogs
+  get '/blogs' => 'blogs#index'
+
+  scope '/users' do
+    resources :blogs, except: [:index]
+  end
+
   namespace :admin do
     get "/stats" => "stats#stats"
     devise_scope :admin_user do
