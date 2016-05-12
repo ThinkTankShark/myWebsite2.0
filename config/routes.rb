@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resource :blogs
+
   root 'home#index'
 
   namespace :admin do

@@ -70,22 +70,24 @@
       Account
       %ul
         %li
-          -user = find_current_user
-          -if user.provider == "twitter"
-            Logged in as @
-            =user.nickname
-          -elsif user.provider == "facebook"
-            Logged in as @
-            =user.name
-          -elsif user.provider == "google"
-            Logged in as @
-            =user.email
-          -elsif !current_user.name.blank?
-            Logged in as
-            = current_user.name
-          -elsif !current_user.email.blank?
-            Logged in as
-            = current_user.email
+          -user = have_identity?
+          -unless user.blank?
+            -if user[0].provider == "twitter"
+              Logged in as @
+              =user[0].nickname
+            -elsif user[0].provider == "facebook"
+              Logged in as
+              =user[0].name
+            -elsif user[0].provider == "google"
+              Logged in as
+              =user[0].email
+          -else
+            -if !current_user.name.blank?
+              Logged in as
+              = current_user.name
+            -elsif !current_user.email.blank?
+              Logged in as
+              = current_user.email
         =link_to 'Profile', edit_user_registration_path
         =link_to 'Sign Out', destroy_user_session_path, :method=>:delete
 - else

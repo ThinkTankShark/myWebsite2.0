@@ -19,9 +19,17 @@ module ApplicationHelper
     @title || controller_name.gsub( /Controller/, "" ).humanize
   end
 
-  def find_current_user
-    return Identity.find_by(user_id: current_user.id)
+  def have_identity?
+    return User.find(current_user.id).identities
   end
+
+  #Return true if person logged in using oAuth
+  # def provider?
+  #   user = find_current_user
+  #           debugger
+
+  #   return true unless user.provider.blank?
+  # end
   #Return true if current_user is also an admin
   # def admin?
   #   return true if !AdminUser.find_by(email: "info@sepandassadi.com").blank?
