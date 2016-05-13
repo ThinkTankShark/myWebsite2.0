@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :blogs
+  get '/blogs' => 'blogs#index'
+
   namespace :admin do
     get "/stats" => "stats#stats"
     devise_scope :admin_user do
@@ -17,4 +18,8 @@ Rails.application.routes.draw do
   post '/signup' => 'splash#signup', as: :splash_signup
   # get '/splash' => 'splash#index'
   get '/setup' => 'setup#index'
+
+  resources 'users', except: [:index] do
+    resources :blogs, except: [:index]
+  end
 end
