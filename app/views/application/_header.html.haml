@@ -1,4 +1,4 @@
-- if controller_name == 'home' || controller_name == 'blogs'
+- if controller_name == 'home' || controller_name == 'blogs' && params[:action] != ('new')
   = navbar position: :static do
     = nav class: 'navbar-right' do
       = render partial: "application/account_dropdown"
