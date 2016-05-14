@@ -18,8 +18,8 @@ ActiveAdmin.register_page "Dashboard" do
         end
       end
       column do
-        panel "Instagram" do
-          render partial: "admin/chart", locals: { scope: 'twitter_users' }
+        panel "Facebook" do
+          render partial: "admin/chart", locals: { scope: 'facebook_users' }
         end
       end
     end

@@ -1,0 +1,123 @@
+%link{:href => "https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en", :rel => "stylesheet"}
+%link{:href => "https://code.getmdl.io/1.1.3/material.blue-red.min.css", :rel => "stylesheet"}
+%link{:href => "/assets/blogs/styles.scss", :rel => "stylesheet"}
+%link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}
+%script{:src => "/assets/jquery.js"}
+
+.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+  %header.mdl-layout__header.mdl-layout__header--waterfall.portfolio-header
+    .mdl-layout__header-row.portfolio-logo-row
+      %span.mdl-layout__title
+        .portfolio-logo
+        %span.mdl-layout__title Welcome To S & A Blog
+    .mdl-layout__header-row.portfolio-navigation-row.mdl-layout--large-screen-only
+      %nav.mdl-navigation.mdl-typography--body-1-force-preferred-font
+        %a.mdl-navigation__link{:href => "/"} Home
+        %a.mdl-navigation__link.is-active{:href => "#"} Blog
+        - if user_signed_in?
+          %a.mdl-navigation__link{:href => "/users/#{current_user.id}/blogs/new"} New Post
+  .mdl-layout__drawer.mdl-layout--small-screen-only
+    %nav.mdl-navigation.mdl-typography--body-1-force-preferred-font
+      %a.mdl-navigation__link{:href => "/"} Home
+      %a.mdl-navigation__link.is-active{:href => "#"} Blog
+      - if user_signed_in?
+        %a.mdl-navigation__link{:href => "/users/#{current_user.id}/blogs/new"} New Post
+  %main.mdl-layout__content
+    .mdl-grid.portfolio-max-width
+      -@blogs.each do |blog|
+        .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+          .mdl-card__media
+            %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work01.jpg"}
+          .mdl-card__title
+            %h2.mdl-card__title-text
+              = blog.title
+          .mdl-card__supporting-text
+            = blog.description
+          .mdl-card__actions.mdl-card--border
+            .mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent
+            = link_to "Read More", user_blog_path(blog[:user_id], blog[:id])
+
+            / Automate from here
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work01.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text Blog template
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work07.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text Sunt nulla
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work02.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text Android.com website
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work03.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text Dashboard template
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work04.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text Text-heavy website
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work08.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text Ex officia laborum
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work05.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text Stand-alone article
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work06.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text MDL website
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+      .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+        .mdl-card__media
+          %img.article-image{:alt => "", :border => "0", :src => " /assets/blogTemplate/example-work09.jpg"}
+        .mdl-card__title
+          %h2.mdl-card__title-text Consequat ut quis
+        .mdl-card__supporting-text
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        .mdl-card__actions.mdl-card--border
+          %a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent{:href => "portfolio-example01.html"} Read more
+    = render 'footer'
+%script{:src => "https://code.getmdl.io/1.1.3/material.min.js"}

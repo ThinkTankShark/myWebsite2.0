@@ -1,11 +1,33 @@
-%li.dropdown
-  %a.dropdown-toggle{ "href" => "#", "data-toggle"=>"dropdown", "role" => "button", "aria-expanded"=>"false"}
-    Account <span class="caret"></span>
-  %ul.dropdown-menu
-    - if user_signed_in?
-      = link_to 'Profile', edit_user_registration_path
-      = link_to 'Sign Out', destroy_user_session_path, :method=>:delete
-    - else
-      / CONNECT
-      = link_to 'Sign In', new_user_session_path
-      = link_to 'Sign Up', new_user_registration_path
+%link{:href => "/assets/sections/_header.scss", :rel => "stylesheet"}
+- if user_signed_in?
+  %ul
+    %li
+      %a{:href => "/blogs"} Blog
+    %li
+      Account
+      %ul
+        %li
+          -user = have_identity?
+          -unless user.blank?
+            -if user[0].provider == "twitter"
+              Logged in as @
+              =user[0].nickname
+            -elsif user[0].provider == "facebook"
+              Logged in as
+              =user[0].name
+            -elsif user[0].provider == "google"
+              Logged in as
+              =user[0].email
+          -else
+            -if !current_user.name.blank?
+              Logged in as
+              = current_user.name
+            -elsif !current_user.email.blank?
+              Logged in as
+              = current_user.email
+        =link_to 'Profile', edit_user_registration_path
+        =link_to 'Sign Out', destroy_user_session_path, :method=>:delete
+- else
+  / CONNECT
+  = link_to 'Sign In', new_user_session_path
+  = link_to 'Sign Up', new_user_registration_path
