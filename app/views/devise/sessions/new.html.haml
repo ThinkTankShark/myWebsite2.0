@@ -1,0 +1,58 @@
+- @title = "Sign Up"
+%link{:href => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css", :rel => "stylesheet"}
+%link{:href => "/assets/sections/_authenticate_page.scss", :rel => "stylesheet"}
+
+  %div.container
+  = form_for resource, as: resource_name, url: session_path(resource_name) do |f|
+    #login-page.row
+      .col.s12.z-depth-6.card-panel
+        %form.login-form
+          .row
+            .input-field.col.s12.center
+              %img.responsive-img.valign.profile-image-login{:alt => "", :src => "/assets/logoT.png", :style => "width:150px;height:150px;"}
+                %h5
+                  %p.center Welcome Back
+
+            / = devise_error_messages!
+
+            .row.margin
+              .input-field.col.s12
+                %i.mdi-communication-email.prefix
+                = f.email_field :email, id:"email", class:"validate", label: false
+                %label.center-align{:for => "email", class:"center-align"} Email
+            .row.margin
+              .input-field.col.s12
+                %i.mdi-action-lock-outline.prefix
+                = f.password_field :password, id:"password", class:"validate", label: false, autocomplete: "off"
+                %label.center-align{:for => "password"} Password
+              .row
+                .input-field.col.s12.m12.l12.login-text
+                  - if devise_mapping.rememberable?
+                    = f.check_box :remember_me, id:"remember-me", label: false
+                    %label.center-align{:for => "remember-me"} Remember Me
+              .row
+                .input-field.col.s12
+                  = f.button "Login", class:"btn waves-effect waves-light col s12"
+              %br
+              %fieldset.title2.container
+                %legend OR
+          %p.center
+            = render partial: "devise/shared/links"
+    / Post Page - Responsive
+
+  /
+    \================================================
+    Scripts
+    \================================================
+  / jQuery Library
+  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", :type => "text/javascript"}
+  / materialize js
+  %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"}
+  :javascript
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXXXXXX', 'auto');
+    ga('send', 'pageview');

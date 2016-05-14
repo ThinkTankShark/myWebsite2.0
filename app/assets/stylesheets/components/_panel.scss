@@ -1,0 +1,71 @@
+// --------------Panels------------------------------
+// If you want to chnage the look of panels, you should
+// go to http://getbootstrap.com/customize first and see
+// if there is a built-in panel variables.
+//
+// If not, then modify the look or extend panels here.
+//
+//
+// Example:
+//
+// .panel.inverted-panel {
+//   background-color: $panel-inverse-bg;
+//   color: $panel-inverse-color;
+// }
+@media (min-width: 768px) {
+
+}
+@media (min-width: 768px) {
+  /* line 379, /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-left {
+    float: left !important;
+  }
+
+  /* line 382, /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-right {
+    float: right !important;
+    margin-right: -10%;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+  }
+  /* line 386, /Users/sepandassadi/Programming/myWebsite2.0/vendor/bundle/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-right ~ .navbar-right {
+    margin-right: 0;
+  }
+
+  * {
+    border: none;
+  }
+}
+
+.col-lg-8.col-xs-12 {
+  padding-left: 15px;
+}
+
+.alert {
+  // position: absolute;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+.hero h2 {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    /* font-weight: bold; */
+    color: black;
+    font-family: sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p.copyright {
+  font-size: 10px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  white-space: nowrap;
+}

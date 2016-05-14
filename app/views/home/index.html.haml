@@ -1,0 +1,323 @@
+
+%meta{:charset => "utf-8"}
+  %title Sepand Assadi | SF, CA
+  / Behavioral Meta Data
+  %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
+    / Core Meta Data
+    %meta{:charset => "UTF-8"}
+      %meta{:content => "Sepand Assadi Website - Full Stack Developer", :name => "description"}
+        %meta{:content => "HTML,CSS,XML,JavaScript, Ruby, Fullstack, Front-End, Back-End, Software Developer", :name => "keywords"}
+          %meta{:content => "Sepand Assadi", :name => "author"}
+            / Favicon
+            %link{:href => "/assets/favicon.png", :rel => "shortcut icon", :type => "image/png"}
+              / Apple Touch Icons
+              %link{:href => "apple-touch-icon-144x144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+                %link{:href => "apple-touch-icon-114x114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+                  %link{:href => "apple-touch-icon-72x72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+                    %link{:href => "apple-touch-icon-57x57-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "57x57"}
+                      / Fonts
+                      %link{:href => "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300", :rel => "stylesheet", :type => "text/css"}
+                        %link{:href => "https://fonts.googleapis.com/css?family=Lekton", :rel => "stylesheet", :type => "text/css"}
+                          / Styles
+                          %link{:href => "/assets/home/framework.scss", :rel => "stylesheet", :type => "text/css"}/
+                          %link{:href => "/assets/home/style.scss", :rel => "stylesheet", :type => "text/css"}/
+                          / Colors
+                          %link{:href => "/assets/home/colors/ruby-red.scss", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+                            / <link rel="stylesheet" type="text/css" href="css/colors/aqua-blue.css" media="screen">
+                            / <link rel="stylesheet" type="text/css" href="css/colors/sunflower-yellow.css" media="screen">
+                          / Javascript
+                          %script{:src => "/assets/modernizr.js"}
+                          %script{:src => "/assets//jquery.js"}
+
+/ Begin Pageloader
+#pageloader
+  / Content
+  .pageloader-content
+    %img{:alt => "", :src => "/assets/loading.gif"}
+      %h6 loading
+  / END Content
+/ END Pageloader
+/ Sticky Nav
+%header
+  / Container
+  .container
+    .row.header-inner
+      / Logo
+      .col-xs-6.col-lg-2
+        %img.logo.has-retina{:alt => "Persona", :src => "/assets/logoT.png"}
+      / Nav Button
+      .menu-button
+        %span.before
+        %span.main
+        %span.after
+      / Navigation
+      %nav.col-xs-12.col-lg-2.col-lg-offset-8
+        %ul#side-nav
+          %li
+            %a{:href => "#section1"} About
+          %li
+            %a{:href => "#section2"} Portfolio
+          %li.offset
+            %a{:href => "#section3"} Experience
+          %li
+            %a{:href => "#section4"} Blogs
+          %li
+            %a{:href => "#section5"} Contact
+          %li
+            %a#top{:href => "#"} Top
+      / END Navigation
+  / END Container
+/ END Sticky Nav
+/ Begin Hero
+%section.hero
+  .container
+    / Hero Content
+    .row.hero-content{"data-0" => "opacity: 1; transform: translate3d(0px, 0px, 0px);", "data-top-bottom" => "opacity: 0; transform: translate3d(0px, 300%, 0px);"}
+      / Logo
+      .col-xs-12.col-lg-2
+        %img.logo.has-retina{:alt => "SA", :src => "/assets/logoT.png"}
+      / Intro
+      .col-xs-10.col-sm-9.col-lg-7
+        %h2 introduction
+        %h1
+          Hi! I am
+          = succeed "." do
+            %span.highlight Sepand Assadi
+          Full Stack Software Engineer Based in San Francisco.
+        %a.scroll-to{:href => "#section1"}
+    / END Hero Content
+  / END Container
+/ END Hero
+.container
+  / About
+  %section#section1.padded-top
+    / Content
+    .row
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        %h2 about
+        %p I studied software engineering in Cyprus, and, inspired by computers and technology, moved to the US in 2008. In order to establish myself here, I went into marketing, sales, and management.
+        %p In my 4 years at Verizon Wireless, I trained Store Managers and Sales Specialists for over 15 stores and became Best Manager of the Year. We surpassed revenue-per-sale goals by over 20% and 5 of my trainees went on to get promotions (4 of which were in management).
+        %p Moving towards my passion for technology, I transitioned into IT management, where I was the IT go to guy for fast-paced, rapidly growing, startup-cultured environments of 50+ users over 3 sites.
+        %p Eventually, I found my way to Dev Bootcamp, where I learned how to be a more productive and efficient software engineer. As a software developer, I love the feeling of being confused, knowing that the very next thing is a better understanding of that topic or language. I am strongly focused on usability, functionality, code quality and design.
+        %p My interests and specialties include: Ruby on Rails, JavaScript, CSS, Sass, Bootstrap, Materialize, SQL, Swift (Beginner), Python (Beginner), Angular.JS and MEAN Stack (Beginner).
+        %p
+          I'm always eager to learn more and become a better software developer. Do you think I would make a good addition to your developer's team? Shoot me an email at
+          %a{:href => "mailto:info@sepandassadi.com"} email
+          or visit my
+          %a{:href => "https://www.linkedin.com/in/sepandassadi", :target => "_blank"} LinkedIn
+          profile for almost a full resume.
+        %blockquote
+          %p
+            “Learning never exhausts the mind.”
+            \- Leonardo da Vinci
+    / Skills
+    .row
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        / Bar 1
+        .bar-title
+          Ruby on Rails
+          %span.align-right 90%
+        .bar
+          .bar-fill{"data-percent" => "90%"}
+        / Bar 2
+        .bar-title
+          HTML5 &amp; CSS3
+          %span.align-right 90%
+        .bar
+          .bar-fill{"data-percent" => "90%"}
+        / Bar 3
+        .bar-title
+          JavaScript
+          %span.align-right 90%
+        .bar
+          .bar-fill{"data-percent" => "90%"}
+        / Bar 4
+        .bar-title
+          AngularJS
+          %span.align-right 65%
+        .bar
+          .bar-fill{"data-percent" => "65%"}
+        / Bar 5
+        .bar-title
+          Web Applications
+          %span.align-right 85%
+        .bar
+          .bar-fill{"data-percent" => "85%"}
+        / Bar 6
+        .bar-title
+          SQL &amp; PostgreSQL
+          %span.align-right 85%
+        .bar
+          .bar-fill{"data-percent" => "85%"}
+        / Bar 7
+        .bar-title
+          Python
+          %span.align-right 30%
+        .bar
+          .bar-fill{"data-percent" => "30%"}
+        / Bar 8
+        .bar-title
+          Swift(iOS)
+          %span.align-right 30%
+        .bar
+          .bar-fill{"data-percent" => "30%"}
+        / Bar 9
+        .bar-title
+          MEAN Stack
+          %span.align-right 50%
+        .bar
+          .bar-fill{"data-percent" => "50%"}
+  / END About
+  / Work
+  %section#section2
+    / Title
+    .row.padded-top
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        %h2 portfolio
+    .row.padded-bottom
+      / Begin Gallery
+      %ul.folio-list
+        / Project 1
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
+          %a.lightbox{:href => "/assets/portfolio/project1.jpg"}
+            .atvImg
+              %img{:alt => "portfolio", :src => "/assets/portfolio/project1.jpg"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/project1.jpg"}
+        / Project 2
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
+          %a.lightbox{:href => "/assets/portfolio/project2.jpg"}
+            .atvImg
+              %img{:alt => "portfolio", :src => "/assets/portfolio/project2.jpg"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/project2.jpg"}
+      / END Gallery
+  / END Work
+  / Experience
+  %section#section3
+    / Title
+    .row
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        %h2 experience
+    / Timeline
+    .row
+      .timeline.col-xs-12.col-lg-8.col-lg-offset-2
+        .entry
+          .time.on Jan 2016 - Apr 2016
+          .content
+            %span.strong Dev BootCamp
+            %br Student, Full-stack Developer
+        .entry
+          .time Jun 2015 - Feb 2016
+          .content
+            %span.strong Infinix Inc.
+            %br Senior Desktop Support Technician
+        .entry
+          .time Sep 2009 - Jun 2015
+          .content
+            %span.strong readyBUZZ Inc.
+            %br Desktop Support Technician
+        .entry
+          .time Sep 2009 - Jun 2014
+          .content
+            %span.strong Verizon
+            %br Store Managers
+        .entry
+          .time Jul 2009 - Dec 2009
+          .content
+            %span.strong Spa De Soleil Inc.
+            %br Marketing Intern
+        .entry
+          .time Sep 2006 - Feb 2009
+          .content
+            %span.strong Eastern Mediterranean university (E.M.U)
+            %br Research Assistant
+    / Button
+    .row.padded-top
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        %a.button{:href => "Docs/Resume_05072016.pdf", :target => "_blank"} Download Resume
+  / END Experience
+  / Blogs
+  %section#section4
+    / Title
+    .row.padded-top
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        %h2 blogs
+    .row.padded-bottom
+      / Begin Gallery
+      %ul.folio-list
+        / Blog 1
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
+          %a.lightbox{:href => "/assets/blogs/blog-1.jpg"}
+            .atvImg
+              %img{:alt => "blog", :src => "/assets/blogs/blog-1.jpg"}
+                .atvImg-layer{"data-img" => "/assets/blogs/blog-1.jpg"}
+        / Blog 2
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
+          %a.lightbox{:href => "/assets/blogs/blog-2.jpg"}
+            .atvImg
+              %img{:alt => "blog", :src => "/assets/blogs/blog-2.jpg"}
+                .atvImg-layer{"data-img" => "/assets/blogs/blog-2.jpg"}
+        / Blog 3
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
+          %a.lightbox{:href => "/assets/blogs/blog-3.jpg"}
+            .atvImg
+              %img{:alt => "blog", :src => "/assets/blogs/blog-3.jpg"}
+                .atvImg-layer{"data-img" => "/assets/blogs/blog-3.jpg"}
+        / Blog 4
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
+          %a.lightbox{:href => "/assets/blogs/blog-4.jpg"}
+            .atvImg
+              %img{:alt => "blog", :src => "/assets/blogs/blog-4.jpg"}
+                .atvImg-layer{"data-img" => "/assets/blogs/blog-4.jpg"}
+        / Blog 5
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
+          %a.lightbox{:href => "/assets/blogs/blog-5.jpg"}
+            .atvImg
+              %img{:alt => "blog", :src => "/assets/blogs/blog-5.jpg"}
+                .atvImg-layer{"data-img" => "/assets/blogs/blog-5.jpg"}
+        / Blog 6
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
+          %a.lightbox{:href => "/assets/blogs/blog-6.jpg"}
+            .atvImg
+              %img{:alt => "blog", :src => "/assets/blogs/blog-6.jpg"}
+                .atvImg-layer{"data-img" => "/assets/blogs/blog-6.jpg"}
+      / END Gallery
+  / END Work
+  / Contact
+  %section#section5
+    / Title
+    .row.padded-top
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        %h2 contact
+    / Form
+    .row.padded-bottom
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        %h1
+          %a{:href => "mailto:hello@persona.com"} hi@sepandassadi.com
+        %p Or just send me an email straight through here:
+        %form#contact{:method => "post", :name => "contact", :novalidate => "novalidate"}
+          %fieldset
+            %label{:for => "name"} Name
+            %input#name{:name => "name", :type => "text"}/
+            %label{:for => "email"} Email
+            %input#email{:name => "email", :type => "email"}/
+            %label{:for => "message"} Message
+            %textarea#message{:name => "message"}
+            %input#submit{:name => "submit", :type => "submit", :value => "Send Email"}
+        #success
+          %p Your message was sent successfully! I will be in touch as soon as I can.
+        #error
+          %p Something went wrong, try refreshing and submitting the form again.
+  / END Contact
+/ END Container
+/ Javascript
+:javascript
+  function resizeNow() {
+        var browserwidth = $(window).width();
+        var browserheight = $(window).height();
+        $('.pageloader-content').css('right', ((browserwidth - $(".pageloader-content").width()) / 2)).css('top', ((browserheight - $(".pageloader-content").height()) / 2));
+    }
+
+    resizeNow();
+    $(window).resize(resizeNow);
+%script{:src => "/assets/plugins.js"}
+%script{:src => "/assets/main.js"}
