@@ -29,6 +29,6 @@ module MyWebsite20
         #If using public folder
         # config.serve_static_assets = true
         #heroku precompile line
-        config.assets.initialize_on_precompile = true
+        # config.assets.initialize_on_precompile = false
     end
 end
