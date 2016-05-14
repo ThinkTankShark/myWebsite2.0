@@ -5,7 +5,8 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
+config.serve_static_assets = true
+config.assets.initialize_on_precompile = true
 module MyWebsite20
   class Application < Rails::Application
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')    # Settings in config/environments/* take precedence over those specified here.
@@ -27,6 +28,6 @@ module MyWebsite20
       g.stylesheets = false
       g.scaffold_controller "scaffold_controller"
     end
-  
 end
+
 end
