@@ -63,6 +63,11 @@ gem 'camaleon_user_tag'
 # gem 'camaleon_google_analytics'
 gem "camaleon_post_order", github: 'owen2345/camaleon-post-order-plugin'
 
+# heroku add-on
+#  new relic analytics
+gem 'newrelic_rpm'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
