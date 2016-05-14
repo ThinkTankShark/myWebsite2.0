@@ -26,8 +26,8 @@ module MyWebsite20
           g.stylesheets = false
           g.scaffold_controller "scaffold_controller"
         end
+        #heroku precompile line
+        config.serve_static_assets = true
+        config.assets.initialize_on_precompile = true
     end
-
-    config.serve_static_assets = true
-    config.assets.initialize_on_precompile = true
 end
