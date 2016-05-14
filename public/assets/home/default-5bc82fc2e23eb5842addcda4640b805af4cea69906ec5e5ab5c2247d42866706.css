@@ -1,0 +1,351 @@
+/* Body Wrapper */
+/* line 3, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;
+}
+
+/* line 7, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+* {
+  margin: 0  auto;
+  padding: 0 auto;
+  overflow: auto;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* Navigation Bar */
+/* line 20, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  float: top;
+  margin: -10px 0px 0px 0px;
+  background-color: white;
+  font-family: Open Sans;
+  width: 100%;
+  text-transform: uppercase;
+  height: 74px;
+  position: fixed;
+  z-index: 10;
+}
+
+/* line 34, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#nav-left {
+  margin-top: -5px;
+  margin-left: 25px;
+  float: left;
+}
+
+/* line 40, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#nav-left img {
+  height: 74px;
+  padding-top: 15px;
+}
+
+/* line 45, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#nav-right {
+  float: right;
+  font-size: 1em;
+  margin-right: 25px;
+}
+
+/* line 51, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#home-button {
+  background-color: #e6e6e6;
+  border-bottom: 4px solid #69f0ae;
+}
+
+/* line 56, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.button-header {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  width: 100px;
+  display: inline-block;
+}
+
+/* line 64, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 69, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.button-header:hover {
+  background-color: #e6e6e6;
+  text-decoration: none;
+  color: black;
+  border-bottom: 4px solid #69f0ae;
+}
+
+/* line 76, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.button-header div:hover {
+  border-bottom: 4px solid #69f0ae;
+}
+
+/* line 80, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.button-header a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 85, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.button-header a:visited {
+  color: black;
+}
+
+/* Wallpaper Section */
+/* line 92, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.wallpaper {
+  margin-right: 0px;
+  height: 700px;
+}
+
+/* line 97, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.wallpaper img {
+  width: 100%;
+  height: 700px;
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 50px;
+}
+
+/*  Arrow Pointer */
+/* line 108, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#bottom-point {
+  border-radius: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  position: relative;
+  background-color: #69f0ae;
+  text-decoration: none;
+  margin-left: 48%;
+  margin-top: -190px;
+}
+
+/* line 119, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#arrow {
+  text-align: center;
+  color: #1a237e;
+  text-align: middle;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/* About Me Section */
+/* line 129, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#about-me-wrapper {
+  margin: 10px;
+  padding: 5px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* line 136, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#about-me-top {
+  height: 700px;
+  width: 95%;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+/* line 143, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.about-top-layout {
+  text-align: center;
+}
+
+/* line 145, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.about-top-layout p {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  font-size: 55px;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+/* line 157, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.about-top-layout img {
+  text-align: center;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  padding-bottom: 20px;
+}
+
+/* line 167, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.about-top-layout h4 {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+}
+
+/* line 177, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.line-separator {
+  height: 6px;
+  background: #69f0ae;
+  width: 8%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 188, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#social-media-icons img {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+/* line 195, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#social-media-icons div {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/*  This is the resume download button */
+/*div form{
+padding-top: -20px;
+}
+div button {
+background: url("../imgs/button.jpg") no-repeat scroll 0 0 transparent;
+height: 90px;
+width: 90px;
+font-size: 1.4em;
+background-size: 100%;
+border-radius: 50%;
+}*/
+/* line 213, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#about-me-bottom {
+  height: 500px;
+  width: 95%;
+  margin: 20px;
+  margin-top: -30px;
+}
+
+/* line 220, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.about-bottom-layout {
+  margin: auto;
+  text-align: center;
+}
+
+/* line 225, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.section-header {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  font-size: 55px;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+/* line 238, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.about-bottom-layout img {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 242, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.about-bottom-layout figure {
+  display: inline-block;
+}
+
+/* line 246, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.about-bottom-layout figcaption {
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+/* line 254, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+figure img:hover {
+  border: 1px solid gray;
+  border-radius: 10%;
+  background-color: #d7d8d9;
+}
+
+/* Portfolio Section */
+/* Blog Section */
+/* line 265, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+#blog-wrapper {
+  width: 99%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 271, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.blog-div {
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 279, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.blog-table {
+  height: 100%;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 287, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.blog-table img {
+  height: 450px;
+  width: 500px;
+  margin: 0px 10px 20px 10px;
+  border-radius: 5%;
+}
+
+/* line 294, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.blog-img-big img {
+  height: 900px;
+  width: 1000px;
+  border-radius: 5%;
+}
+
+/* Shadow effect for blog section wehen hover */
+/* line 302, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+.imagedropshadow {
+  padding: 5px;
+  border: solid 1px #EFEFEF;
+}
+
+/* line 307, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+a:hover img.imagedropshadow {
+  border: solid 1px #CCC;
+  -moz-box-shadow: 0px 0px 30px 3px #999;
+  -webkit-box-shadow: 0px 0px 30px 3px #999;
+  box-shadow: 0px 0px 30px 3px #999;
+}
+
+/* Footer Section */
+/* line 316, /Users/sepandassadi/Programming/myWebsite2.1/app/assets/stylesheets/home/default.scss */
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+}
