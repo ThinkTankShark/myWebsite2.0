@@ -56,6 +56,9 @@ gem 'jazz_hands', github: 'danrabinowitz/jazz_hands', branch: 'use-newer-version
 gem 'omniauth-google-oauth2'
 gem 'google-api-client'
 
+#CMS gem
+gem 'camaleon_cms'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -101,3 +104,8 @@ end
 group :production do
   gem 'pg'
 end
+
+
+#################### Camaleon CMS include all gems for plugins and themes #################### 
+require './lib/plugin_routes' 
+instance_eval(PluginRoutes.draw_gems)
