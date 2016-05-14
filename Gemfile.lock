@@ -15,6 +15,13 @@ GIT
       pry-stack_explorer (~> 0.4.9)
       railties (>= 3.0, < 5.0)
 
+GIT
+  remote: git://github.com/owen2345/camaleon-post-order-plugin.git
+  revision: 9b0f0e12fb4efb65d58a4089594c5fd092d5ce43
+  specs:
+    camaleon_post_order (0.0.2)
+      rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -91,6 +98,11 @@ GEM
       tinymce-rails (~> 4.3)
       will_paginate
       will_paginate-bootstrap
+    camaleon_mailchimp (0.0.1)
+      gibbon (~> 2.0)
+      rails (~> 4.2, >= 4.2.4)
+    camaleon_user_tag (0.0.2.1)
+      rails (~> 4.2)
     cancancan (1.13.1)
     capybara (2.7.1)
       addressable
@@ -530,6 +542,9 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   camaleon_cms
+  camaleon_mailchimp
+  camaleon_post_order!
+  camaleon_user_tag
   capybara
   coffee-rails (~> 4.1.0)
   cucumber-rails
