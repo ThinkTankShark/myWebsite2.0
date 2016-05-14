@@ -50,12 +50,18 @@ gem 'octokit'
 # gem 'instagram'
 gem 'omniauth-twitter'
 gem 'twitter'
-gem 'activeadmin', github: 'activeadmin', branch: 'master'
 gem 'inherited_resources'
 gem 'dateslices'
 gem 'jazz_hands', github: 'danrabinowitz/jazz_hands', branch: 'use-newer-version-of-pry', groups: [:development, :test]
 gem 'omniauth-google-oauth2'
 gem 'google-api-client'
+
+#CMS gem
+gem 'camaleon_cms'
+gem 'camaleon_mailchimp'
+gem 'camaleon_user_tag'
+# gem 'camaleon_google_analytics'
+gem "camaleon_post_order", github: 'owen2345/camaleon-post-order-plugin'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -102,3 +108,8 @@ end
 group :production do
   gem 'pg'
 end
+
+
+#################### Camaleon CMS include all gems for plugins and themes ####################
+require './lib/plugin_routes'
+instance_eval(PluginRoutes.draw_gems)
