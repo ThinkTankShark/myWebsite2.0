@@ -11,7 +11,6 @@
         self.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
     ];
     var html = $('html');
-
     html.data('scroll-position', scrollPosition);
     html.data('previous-overflow', html.css('overflow'));
     html.css('overflow', 'hidden');
