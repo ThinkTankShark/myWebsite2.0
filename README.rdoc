@@ -7,3 +7,7 @@
 * Database creation: Development & Test: SQLite, Production: PostgreSQL
 
 * Deployment Database: Hosted on AWS
+
+* Monitoring Software: New Relic
+
+* Rails Engine: Camaleon CMS
