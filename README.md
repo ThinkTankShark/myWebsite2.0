@@ -54,9 +54,8 @@
 ![team](app/assets/images/Wireframes//team.png)
 
 
-## Presentation
-[Live Presentation](https://youtu.be/8QUZFZloCFM)
-
 ## Deployment Link
-[Heroku](http://pocketboard.herokuapp.com/)
+[Heroku](http://sepandassadi.com/)
+[Blog Page](http://sepandassadi.com/blog)
+[Admin Login](http://sepandassadi.com/blog/admin)
 
