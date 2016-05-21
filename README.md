@@ -2,7 +2,7 @@
 
 ## Schema
 ![schema](db/schema.jpg)
---------------------------------------
+
 ## User stories
 #### Currently
 - A user can login and logout
@@ -20,7 +20,7 @@
 
 #### Future Options
 - A user can create, view, edit and delete a page for their account (with role authentication)
------------------------------
+
 ## Showcase
 
 ###Homepage
@@ -51,7 +51,7 @@
 
 ###Blog Post
 ![post](app/assets/images/github/blog_post.png)
---------------------------------------------
+
 ## Team
 ![team](app/assets/images/github/sepandassadi.png)
 
