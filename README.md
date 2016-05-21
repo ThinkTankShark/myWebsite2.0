@@ -25,7 +25,9 @@
 
 ###Homepage
 ![header](app/assets/images/github/header.png)
+
 ![homepage1](app/assets/images/github/Personal Website 1.png)
+
 ![homepage2](app/assets/images/github/Personal Website 2.png)
 ![homepage3](app/assets/images/github/Personal Website 3.png)
 ![homepage4](app/assets/images/github/Personal Website 4.png)
