@@ -7,7 +7,3 @@
 * Database creation: Development & Test: SQLite, Production: PostgreSQL
 
 * Deployment Database: Hosted on AWS
-
-* ...
-
-<tt>rake doc:app</tt>.
