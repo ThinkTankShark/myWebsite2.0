@@ -47,10 +47,10 @@
 ![dashboard](app/assets/images/github/dashboard.png)
 
 ###Create A Post
-![create post](app/assets/images/github/create_post.png
+![create post](app/assets/images/github/create_post.png)
 
 ###Blog Post
-![post](app/assets/images/github/blog_post.png
+![post](app/assets/images/github/blog_post.png)
 --------------------------------------------
 ## Team
 ![team](app/assets/images/github/sepandassadi.png)
