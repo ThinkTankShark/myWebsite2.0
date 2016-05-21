@@ -22,7 +22,7 @@
 - A user can create, view, edit and delete a page for their account (with role authentication)
 
 ## Showcase
-
+![header](app/assets/images/github/header.png)
 
 ###Homepage
 ![homepage1](app/assets/images/github/Personal Website 1.png)
