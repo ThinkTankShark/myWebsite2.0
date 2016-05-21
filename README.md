@@ -4,15 +4,23 @@
 ![schema](db/schema.jpg)
 
 ## User stories
+#### Currently
+- A user can login and logout
+- A user can sign-up
+- A user can create, view, edit and delete a blog page
+- A user can create, view, edit and delete a blog post
+- A user can create, view, edit and delete a blog post's tag
+- A user can create, view, edit and delete a blog post's keywords
+- A user can create, view, edit and delete a blog post's feature image
+- A user can create, view, edit and delete a blog post's category name
+- A user can create a status for a blog post (Draft or Published)
 
-#### - A user can login and logout
-#### - A user can sign-up
-#### - A user can create, view, edit and delete a portfolio
-#### - A user can add stocks to and remove stocks from a portfolio
-#### - A user can set the stock allocation in their portfolios
-#### - A user can do back-testing to their portfolios
-#### - A user can export the result as PDF
+- Admin can create, edit, delete a user
+- Admin can update website meta information
+- Admin can create, edit, remove a welcome page
 
+#### Future Options
+- A user can create, view, edit and delete a page for their account (with role authentication)
 
 ## Wireframe
 
