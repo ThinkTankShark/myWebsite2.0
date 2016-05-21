@@ -14,7 +14,6 @@
 - A user can create, view, edit and delete a blog post's feature image
 - A user can create, view, edit and delete a blog post's category name
 - A user can create a status for a blog post (Draft or Published)
-
 - Admin can create, edit, delete a user
 - Admin can update website meta information
 - Admin can create, edit, remove a welcome page
