@@ -27,11 +27,6 @@
 ###Homepage
 ![homepage1](app/assets/img/Wireframes/Homepage1.png)
 
-![homepage2](app/assets/img/Wireframes/Homepage2.png)
-
-![homepage3](app/assets/img/Wireframes/Homepage3.png)
-
-![homepage4](app/assets/img/Wireframes/Homepage4.png)
 
 ###Signup
 ![signup](app/assets/img/Wireframes/Signup.png)
@@ -41,13 +36,7 @@
 
 
 ###Dashboard
-![dashboard1](app/assets/img/Wireframes/Dashboard.png)
 
-![dashboard2](app/assets/img/Wireframes/Dashboard2.png)
-
-![dashboard3](app/assets/img/Wireframes/Dashboard3.png)
-
-![dashboard4](app/assets/img/Wireframes/Dashboard4.png)
 
 
 ## Our Team
@@ -56,6 +45,8 @@
 
 ## Deployment Link
 [Heroku](http://sepandassadi.com/)
-[Blog Page](http://sepandassadi.com/blog)
-[Admin Login](http://sepandassadi.com/blog/admin)
+
+[Blog Page](http://www.sepandassadi.com/blog)
+
+[Admin Login](http://www.sepandassadi.com/blog/admin/login)
 
