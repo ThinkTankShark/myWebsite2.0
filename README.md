@@ -1,8 +1,8 @@
-# Pocket-Board
+# Personal Website
 
 ## Schema
 ![schema](db/schema.jpg)
-
+--------------------------------------
 ## User stories
 #### Currently
 - A user can login and logout
@@ -20,27 +20,45 @@
 
 #### Future Options
 - A user can create, view, edit and delete a page for their account (with role authentication)
-
-## Wireframe
+-----------------------------
+## Showcase
 
 ###Homepage
-![homepage1](app/assets/img/Wireframes/Homepage1.png)
+![header](app/assets/images/github/header.png)
+![homepage1](app/assets/images/github/Personal Website 1.png)
+![homepage2](app/assets/images/github/Personal Website 2.png)
+![homepage3](app/assets/images/github/Personal Website 3.png)
+![homepage4](app/assets/images/github/Personal Website 4.png)
+![homepage5](app/assets/images/github/Personal Website 5.png)
+![homepage6](app/assets/images/github/Personal Website 6.png)
+![homepage7](app/assets/images/github/Personal Website 7.png)
 
 
 ###Signup
-![signup](app/assets/img/Wireframes/Signup.png)
+![signup](app/assets/images/github/signup.png)
 
 ###Login
-![login](app/assets/img/Wireframes/Login.png)
+![login](app/assets/images/github/login.png)
 
+###Forgot Password
+![forgot password](app/assets/images/github/forgot_password.png)
 
 ###Dashboard
+![dashboard](app/assets/images/github/dashboard.png)
 
+###Create A Post
+![create post](app/assets/images/github/create_post.png
 
+###Blog Post
+![post](app/assets/images/github/blog_post.png
+--------------------------------------------
+## Team
+![team](app/assets/images/github/sepandassadi.png)
 
-## Our Team
-![team](app/assets/images/Wireframes//team.png)
+## Presentation
+[Portfolio](https://sepandassadi.carbonmade.com/)
 
+[Behance](https://www.behance.net/gallery/37433833/Personal-Website)
 
 ## Deployment Link
 [Heroku](http://sepandassadi.com/)
