@@ -165,7 +165,6 @@
     $('.lightbox').magnificPopup({
         type: 'image',
         mainClass: 'mfp-with-zoom mfp-fade',
-
         zoom: {
             enabled: true,
 

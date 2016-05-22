@@ -15,6 +15,7 @@
 
 //FADEOUT FLASH MESSAGES
 //= require flash
+//= require homepage.js
 //= require init
 
 
