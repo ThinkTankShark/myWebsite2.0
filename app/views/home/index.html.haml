@@ -25,9 +25,12 @@
                           %link{:href => "/assets/home/colors/ruby-red.scss", :media => "screen", :rel => "stylesheet", :type => "text/css"}
                             / <link rel="stylesheet" type="text/css" href="css/colors/aqua-blue.css" media="screen">
                             / <link rel="stylesheet" type="text/css" href="css/colors/sunflower-yellow.css" media="screen">
+                          /Tooltip CSS
+                          %link{:href => "/assets/tooltipster.css", :rel => "stylesheet", :type => "text/css"}/
                           / Javascript
                           %script{:src => "/assets/modernizr.js"}
                           %script{:src => "/assets//jquery.js"}
+                          %script{:src => "/assets/jquery.tooltipster.min.js", :type => "text/javascript"}
 
 / Begin Pageloader
 #pageloader
@@ -179,29 +182,28 @@
       %ul.folio-list
         / Project 1
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a{:href => "https://github.com/wly731/Pocket-Board"}
+          %a.lightbox#project1{:href => "/assets/portfolio/pocketboard.png"}
             .atvImg
-              %img{:alt => "portfolio", :src => "/assets/portfolio/project1.jpg"}
-                .atvImg-layer{"data-img" => "/assets/portfolio/project1.jpg"}
-
+              %img{:alt => "portfolio", :src => "/assets/portfolio/pocketboard.png"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/pocketboard.png"}
         / Project 2
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-          %a{:href => "https://rubygems.org/gems/guesswhat"}
+          %a.lightbox#project2{:href => "/assets/portfolio/guesswhat.png"}
             .atvImg
-              %img{:alt => "portfolio", :src => "/assets/portfolio/maxresdefault.jpg"}
-                .atvImg-layer{"data-img" => "/assets/portfolio/maxresdefault.jpg"}
+              %img{:alt => "portfolio", :src => "/assets/portfolio/guesswhat.jpg"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/guesswhat.jpg", :onClick => "portfolioImageListener();"}
         / Project 3
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a.lightbox{:href => "https://github.com/ThinkTankShark/myWebsite2.0"}
+          %a.lightbox#project3{:href => "/assets/portfolio/personalwebsite.png"}
             .atvImg
-              %img{:alt => "portfolio", :src => "/assets/portfolio/websiteproject.png"}
-                .atvImg-layer{"data-img" => "/assets/portfolio/websiteproject.png"}
-        / / Project 4
-        / %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-        /   %a.lightbox{:href => "/assets/portfolio/hero.jpg"}
-        /     .atvImg
-        /       %img{:alt => "portfolio", :src => "/assets/portfolio/hero.jpg"}
-        /         .atvImg-layer{"data-img" => "/assets/portfolio/hero.jpg"}
+              %img{:alt => "portfolio", :src => "/assets/portfolio/personalwebsite.png"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/personalwebsite.png"}
+        / Project 4
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
+          %a.lightbox#project4{:href => "/assets/portfolio/project-fako.jpg"}
+            .atvImg
+              %img{:alt => "portfolio", :src => "/assets/portfolio/project-fako.jpg"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/project-fako.jpg"}
       / END Gallery
   / END Work
   / Experience
@@ -259,37 +261,37 @@
       %ul.folio-list
         / Blog 1
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a.lightbox{:href => "/assets/blogs/blog-1.jpg"}
+          %a.lightbox#blog1{:href => "/assets/blogs/blog-1.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-1.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-1.jpg"}
         / Blog 2
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-          %a.lightbox{:href => "/assets/blogs/blog-2.jpg"}
+          %a.lightbox#blog2{:href => "/assets/blogs/blog-2.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-2.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-2.jpg"}
         / Blog 3
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a.lightbox{:href => "/assets/blogs/blog-3.jpg"}
+          %a.lightbox#blog3{:href => "/assets/blogs/blog-3.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-3.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-3.jpg"}
         / Blog 4
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-          %a.lightbox{:href => "/assets/blogs/blog-4.jpg"}
+          %a.lightbox#blog4{:href => "/assets/blogs/blog-4.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-4.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-4.jpg"}
         / Blog 5
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a.lightbox{:href => "/assets/blogs/blog-5.jpg"}
+          %a.lightbox#blog5{:href => "/assets/blogs/blog-5.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-5.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-5.jpg"}
         / Blog 6
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-          %a.lightbox{:href => "/assets/blogs/blog-6.jpg"}
+          %a.lightbox#blog6{:href => "/assets/blogs/blog-6.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-6.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-6.jpg"}
