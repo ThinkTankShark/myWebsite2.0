@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
   // Using Tool-tip for portfolios
    toolTipPortfolioListener('#project1', 'http://pocketboard.herokuapp.com/')
    toolTipPortfolioListener('#project2', 'https://rubygems.org/gems/guesswhat')
@@ -13,7 +13,7 @@ $(document).ready(function() {
    toolTipBlogListener('#blog5', 'http://www.sepandassadi.com/blog/web-accessibility-and-best-practices', text="Web accessibility & Best Practices")
    toolTipBlogListener('#blog6', 'http://www.sepandassadi.com/blog/benefits-of-using-version-control-systems2', text="Benefits of Using VCS")
 
-});
+// });
 
   // Using Tool-tip for portfolios
   function toolTipPortfolioListener(idName, linkURL, text="Find Out More") {
