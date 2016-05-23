@@ -21,6 +21,14 @@
 #### Future Options
 - A user can create, view, edit and delete a page for their account (with role authentication)
 
+##Wire-frame
+![sitemap](app/assets/images/wireframes/site-map.png)
+![moodboard](app/assets/images/wireframes/Website-moodboard.png)
+![header](app/assets/images/wireframes/index-header.png)
+![blog-index](app/assets/images/wireframes/wireframe-blog-index.png)
+![blog](app/assets/images/wireframes/wireframe-blogs.png)
+![index](app/assets/images/wireframes/wireframe-index.png)
+
 ## Showcase
 ![header](app/assets/images/github/header.png)
 
