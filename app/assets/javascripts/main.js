@@ -167,7 +167,6 @@
         mainClass: 'mfp-with-zoom mfp-fade',
         zoom: {
             enabled: true,
-
             duration: 300,
             easing: 'ease-in-out',
 

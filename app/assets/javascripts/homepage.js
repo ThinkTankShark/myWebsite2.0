@@ -3,10 +3,10 @@ $(document).ready(function() {
    toolTipPortfolioListener('#project1', 'http://pocketboard.herokuapp.com/', text="Find Out More")
    toolTipPortfolioListener('#project2', 'https://rubygems.org/gems/guesswhat', text="Find Out More")
    toolTipPortfolioListener('#project3', 'http://www.sepandassadi.com/', text="Find Out More")
-   toolTipPortfolioListener('#project4', '#', text="Coming Soon")
+   toolTipPortfolioListener('#project4', '', text="Coming Soon")
 
   // Using Tool-tip for blogs
-   toolTipBlogListener('#blog1', '', text="")
+   toolTipBlogListener('#blog1', 'http://www.sepandassadi.com/blog/how-to-create-a-lightbox-image-in-javascript', text="Create a Lightbox Image")
    toolTipBlogListener('#blog2', 'http://www.sepandassadi.com/blog/sublime-text-plugins-not-only-for-newbies-1', text="Sublime Text Plugins")
    toolTipBlogListener('#blog3', 'http://www.sepandassadi.com/blog/intro-to-rails-engines', text="Intro To Rails Engines")
    toolTipBlogListener('#blog4', 'http://www.sepandassadi.com/blog/absolute-relative-fixed-positioning-how-do-they-differ2', text="Intro To CSS Positions")
