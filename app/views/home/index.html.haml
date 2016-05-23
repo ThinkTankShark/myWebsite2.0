@@ -9,7 +9,7 @@
         %meta{:content => "HTML,CSS,XML,JavaScript, Ruby, Fullstack, Front-End, Back-End, Software Developer", :name => "keywords"}
           %meta{:content => "Sepand Assadi", :name => "author"}
             / Favicon
-            %link{:href => "/assets/favicon.png", :rel => "shortcut icon", :type => "image/png"}
+            %link{:href => "/assets/favicon.ico", :rel => "shortcut icon"}
               / Apple Touch Icons
               %link{:href => "apple-touch-icon-144x144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
                 %link{:href => "apple-touch-icon-114x114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
@@ -25,9 +25,12 @@
                           %link{:href => "/assets/home/colors/ruby-red.scss", :media => "screen", :rel => "stylesheet", :type => "text/css"}
                             / <link rel="stylesheet" type="text/css" href="css/colors/aqua-blue.css" media="screen">
                             / <link rel="stylesheet" type="text/css" href="css/colors/sunflower-yellow.css" media="screen">
+                          /Tooltip CSS
+                          %link{:href => "/assets/tooltipster.css", :rel => "stylesheet", :type => "text/css"}/
                           / Javascript
                           %script{:src => "/assets/modernizr.js"}
                           %script{:src => "/assets//jquery.js"}
+                          %script{:src => "/assets/jquery.tooltipster.min.js", :type => "text/javascript"}
 
 / Begin Pageloader
 #pageloader
@@ -158,15 +161,15 @@
         / Bar 8
         .bar-title
           Swift(iOS)
-          %span.align-right 30%
+          %span.align-right 20%
         .bar
-          .bar-fill{"data-percent" => "30%"}
+          .bar-fill{"data-percent" => "20%"}
         / Bar 9
         .bar-title
           MEAN Stack
-          %span.align-right 50%
+          %span.align-right 40%
         .bar
-          .bar-fill{"data-percent" => "50%"}
+          .bar-fill{"data-percent" => "40%"}
   / END About
   / Work
   %section#section2
@@ -179,16 +182,28 @@
       %ul.folio-list
         / Project 1
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a.lightbox{:href => "/assets/portfolio/project1.jpg"}
+          %a.lightbox#project1{:href => "/assets/portfolio/pocketboard.png"}
             .atvImg
-              %img{:alt => "portfolio", :src => "/assets/portfolio/project1.jpg"}
-                .atvImg-layer{"data-img" => "/assets/portfolio/project1.jpg"}
+              %img{:alt => "portfolio", :src => "/assets/portfolio/pocketboard.png"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/pocketboard.png"}
         / Project 2
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-          %a.lightbox{:href => "/assets/portfolio/project2.jpg"}
+          %a.lightbox#project2{:href => "/assets/portfolio/guesswhat.png"}
             .atvImg
-              %img{:alt => "portfolio", :src => "/assets/portfolio/project2.jpg"}
-                .atvImg-layer{"data-img" => "/assets/portfolio/project2.jpg"}
+              %img{:alt => "portfolio", :src => "/assets/portfolio/guesswhat.jpg"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/guesswhat.jpg", :onClick => "portfolioImageListener();"}
+        / Project 3
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
+          %a.lightbox#project3{:href => "/assets/portfolio/personalwebsite.png"}
+            .atvImg
+              %img{:alt => "portfolio", :src => "/assets/portfolio/personalwebsite.png"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/personalwebsite.png"}
+        / Project 4
+        %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
+          %a.lightbox#project4{:href => "/assets/portfolio/project-fako.jpg"}
+            .atvImg
+              %img{:alt => "portfolio", :src => "/assets/portfolio/project-fako.jpg"}
+                .atvImg-layer{"data-img" => "/assets/portfolio/project-fako.jpg"}
       / END Gallery
   / END Work
   / Experience
@@ -233,7 +248,7 @@
     / Button
     .row.padded-top
       .col-xs-12.col-lg-8.col-lg-offset-2
-        %a.button{:href => "Docs/Resume_05072016.pdf", :target => "_blank"} Download Resume
+        %a.button{:href => "https://s3-us-west-1.amazonaws.com/sepandassadi-website/Resume_05072016.pdf", :target => "_blank"} Download Resume
   / END Experience
   / Blogs
   %section#section4
@@ -246,37 +261,37 @@
       %ul.folio-list
         / Blog 1
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a.lightbox{:href => "/assets/blogs/blog-1.jpg"}
+          %a.lightbox#blog1{:href => "/assets/blogs/blog-1.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-1.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-1.jpg"}
         / Blog 2
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-          %a.lightbox{:href => "/assets/blogs/blog-2.jpg"}
+          %a.lightbox#blog2{:href => "/assets/blogs/blog-2.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-2.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-2.jpg"}
         / Blog 3
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a.lightbox{:href => "/assets/blogs/blog-3.jpg"}
+          %a.lightbox#blog3{:href => "/assets/blogs/blog-3.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-3.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-3.jpg"}
         / Blog 4
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-          %a.lightbox{:href => "/assets/blogs/blog-4.jpg"}
+          %a.lightbox#blog4{:href => "/assets/blogs/blog-4.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-4.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-4.jpg"}
         / Blog 5
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1.col-lg-4.col-lg-offset-2
-          %a.lightbox{:href => "/assets/blogs/blog-5.jpg"}
+          %a.lightbox#blog5{:href => "/assets/blogs/blog-5.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-5.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-5.jpg"}
         / Blog 6
         %li.col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-0.col-lg-4
-          %a.lightbox{:href => "/assets/blogs/blog-6.jpg"}
+          %a.lightbox#blog6{:href => "/assets/blogs/blog-6.jpg"}
             .atvImg
               %img{:alt => "blog", :src => "/assets/blogs/blog-6.jpg"}
                 .atvImg-layer{"data-img" => "/assets/blogs/blog-6.jpg"}
@@ -292,7 +307,7 @@
     .row.padded-bottom
       .col-xs-12.col-lg-8.col-lg-offset-2
         %h1
-          %a{:href => "mailto:hello@persona.com"} hi@sepandassadi.com
+          %a{:href => "mailto:hi@sepandassadi.com"} hi@sepandassadi.com
         %p Or just send me an email straight through here:
         %form#contact{:method => "post", :name => "contact", :novalidate => "novalidate"}
           %fieldset
