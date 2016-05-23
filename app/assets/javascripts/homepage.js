@@ -1,9 +1,9 @@
 // $(document).ready(function() {
   // Using Tool-tip for portfolios
-   toolTipPortfolioListener('#project1', 'http://pocketboard.herokuapp.com/')
-   toolTipPortfolioListener('#project2', 'https://rubygems.org/gems/guesswhat')
-   toolTipPortfolioListener('#project3', 'http://www.sepandassadi.com/')
-   toolTipPortfolioListener('#project4', '#', text="Coming Soon")
+   toolTipPortfolioListener('#project1', 'http://pocketboard.herokuapp.com/', text="Find Out More")
+   toolTipPortfolioListener('#project2', 'https://rubygems.org/gems/guesswhat', text="Find Out More")
+   toolTipPortfolioListener('#project3', 'http://www.sepandassadi.com/', text="Find Out More")
+   toolTipPortfolioListener('#project4', '#', text="Coming Soon", text="Find Out More")
 
   // Using Tool-tip for blogs
    toolTipBlogListener('#blog1', '', text="")
@@ -16,7 +16,7 @@
 // });
 
   // Using Tool-tip for portfolios
-  function toolTipPortfolioListener(idName, linkURL, text="Find Out More") {
+  function toolTipPortfolioListener(idName, linkURL, text) {
     $(idName).tooltipster({
       animation: 'fade',
       delay: 200,
