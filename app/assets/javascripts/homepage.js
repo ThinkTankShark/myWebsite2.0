@@ -20,7 +20,7 @@ $(document).ready(function() {
     $(idName).tooltipster({
       animation: 'fade',
       delay: 200,
-      content: `<a target="_blank" href="${linkURL}">${text}</a>`,
+      content: `<a target="_blank" href="${linkURL}" style="color:white">${text}</a>`,
       contentAsHTML: true,
       interactive: true,
       theme: 'tooltipster-default',
@@ -36,7 +36,7 @@ $(document).ready(function() {
     $(idName).tooltipster({
       animation: 'fade',
       delay: 200,
-      content: `<a target="_blank" href="${linkURL}">${text}</a>`,
+      content: `<a target="_blank" href="${linkURL}" style="color:white">${text}</a>`,
       contentAsHTML: true,
       interactive: true,
       theme: 'tooltipster-default',
