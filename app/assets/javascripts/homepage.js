@@ -43,7 +43,7 @@ $(document).ready(function() {
       touchDevices: true,
       trigger: 'hover',
       position: 'top-left'
-      // positionTracker: true
+      // positionTracker: truee
     });
   }
 

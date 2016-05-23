@@ -19,3 +19,7 @@
 .bowerrc
 /vendor
 /app/assets/images/PSD
+config/secrets.yml
+
+# Ignore application configuration
+/config/application.yml
