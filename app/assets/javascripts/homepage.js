@@ -1,9 +1,9 @@
-// $(document).ready(function() {
+$(document).ready(function() {
   // Using Tool-tip for portfolios
-   toolTipPortfolioListener('#project1', 'http://pocketboard.herokuapp.com/', text="Find Out More")
-   toolTipPortfolioListener('#project2', 'https://rubygems.org/gems/guesswhat', text="Find Out More")
-   toolTipPortfolioListener('#project3', 'http://www.sepandassadi.com/', text="Find Out More")
-   toolTipPortfolioListener('#project4', '#', text="Coming Soon", text="Find Out More")
+   toolTipPortfolioListener('#project1', 'http://pocketboard.herokuapp.com/')
+   toolTipPortfolioListener('#project2', 'https://rubygems.org/gems/guesswhat')
+   toolTipPortfolioListener('#project3', 'http://www.sepandassadi.com/')
+   toolTipPortfolioListener('#project4', '#', text="Coming Soon")
 
   // Using Tool-tip for blogs
    toolTipBlogListener('#blog1', '', text="")
@@ -13,10 +13,10 @@
    toolTipBlogListener('#blog5', 'http://www.sepandassadi.com/blog/web-accessibility-and-best-practices', text="Web accessibility & Best Practices")
    toolTipBlogListener('#blog6', 'http://www.sepandassadi.com/blog/benefits-of-using-version-control-systems2', text="Benefits of Using VCS")
 
-// });
+});
 
   // Using Tool-tip for portfolios
-  function toolTipPortfolioListener(idName, linkURL, text) {
+  function toolTipPortfolioListener(idName, linkURL, text="Find Out More") {
     $(idName).tooltipster({
       animation: 'fade',
       delay: 200,
