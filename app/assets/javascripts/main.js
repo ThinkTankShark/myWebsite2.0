@@ -236,9 +236,9 @@
             },
             submitHandler: function(form) {
                 $(form).ajaxSubmit({
-                    type: "POST",
+                    type: "GET",
                     data: $(form).serialize(),
-                    url: "contact.php",
+                    url: "/contact",
                     success: function() {
                         $('#contact :input').attr('disabled', 'disabled');
                         $('#contact').fadeTo("slow", 0.15, function() {

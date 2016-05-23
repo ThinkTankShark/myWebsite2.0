@@ -309,7 +309,7 @@
         %h1
           %a{:href => "mailto:hi@sepandassadi.com"} hi@sepandassadi.com
         %p Or just send me an email straight through here:
-        %form#contact{:method => "post", :name => "contact", :novalidate => "novalidate"}
+        %form#contact{:method => "get", :name => "contact", :novalidate => "novalidate"}
           %fieldset
             %label{:for => "name"} Name
             %input#name{:name => "name", :type => "text"}/
