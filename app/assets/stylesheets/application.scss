@@ -17,6 +17,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+#loading-indicator {
+  // position: absolute;
+  left: 10px;
+  top: 10px;
+  clear:both;
+}
 
 // // --------------Global definitions--------------------
 // // For example (add your own!!):

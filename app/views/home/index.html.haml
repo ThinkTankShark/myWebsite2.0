@@ -29,7 +29,6 @@
                           / %link{:href => "/assets/tooltipster.css", :rel => "stylesheet", :type => "text/css"}/
                           / Javascript
                           %script{:src => "/assets/modernizr.js"}
-                          / %script{:src => "/assets/homepage.js"}
                           %script{:src => "/assets//jquery.js"}
                           %script{:src => "/assets/jquery.tooltipster.min.js", :type => "text/javascript"}
 
@@ -318,7 +317,9 @@
             %input#email{:name => "email", :type => "email"}/
             %label{:for => "message"} Message
             %textarea#message{:name => "message"}
+            %img#loading-indicator{:src => "/assets/loading.gif", :style => "display:none"}
             %input#submit{:name => "submit", :type => "submit", :value => "Send Email"}
+              / %h6 loading...
         #success
           %p Your message was sent successfully! I will be in touch as soon as I can.
         #error

@@ -9,7 +9,6 @@ class HomeController < ApplicationController
 
         # ActionMailer::Base.mail(:from => "contact@sepandassadi.com", :to => params["email"], :subject => "test", :body => "test").deliver
         first_name = /^\w+/.match(params["name"]).to_s
-        # debugger;
         @prospect = { name: first_name, email: params["email"], message: params["message"] }
         ContactMailer.welcome_email(@prospect).deliver_now
         ContactMailer.contact_owner(@prospect).deliver_now

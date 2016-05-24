@@ -250,7 +250,8 @@
                         $('#contact').fadeTo("slow", 0.15, function() {
                             $('#error').fadeIn();
                         });
-                    }
+                    },
+
                 });
             }
         });
