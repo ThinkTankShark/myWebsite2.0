@@ -8,7 +8,8 @@ class HomeController < ApplicationController
       if request.xhr?
 
         # ActionMailer::Base.mail(:from => "contact@sepandassadi.com", :to => params["email"], :subject => "test", :body => "test").deliver
-        @prospect = { name: params["name"], email: params["email"], message: params["message"] }
+        first_name = /^\w+/.match(params["name"]).to_s
+        @prospect = { name: first_name, email: params["email"], message: params["message"] }
         ContactMailer.welcome_email(@prospect).deliver_now
         ContactMailer.contact_owner(@prospect).deliver_now
 

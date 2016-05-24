@@ -17,7 +17,15 @@
 //= require flash
 //= require homepage
 //= require init
+$(document).ajaxSend(function(event, request, settings) {
+  // $(this).fadeIn('fast');
+  $('#loading-indicator').show();
+  // debugger;
+});
 
-
+$(document).ajaxComplete(function(event, request, settings) {
+  // $(this).stop().fadeOut('fast');
+  $('#loading-indicator').hide();
+});
 
 
