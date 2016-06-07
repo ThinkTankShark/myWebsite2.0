@@ -6,6 +6,9 @@
 
   %meta{ :name => 'description', :content => '' }/
   %meta{ :name => 'viewport', :content => 'width=device-width' }/
+  /[if lt IE 9]
+  <script src="/Content/plugins/html5shiv.js"></script>
+  <script src="/Content/plugins/jRespond/js/respond.min.js"></script>
 
   = render 'stylesheets'
   = javascript_include_tag 'modernizr'

@@ -1,9 +1,13 @@
 $(document).ready(function() {
   // Using Tool-tip for portfolios
-   toolTipPortfolioListener('#project1', 'http://pocketboard.herokuapp.com/', text="Find Out More")
-   toolTipPortfolioListener('#project2', 'https://rubygems.org/gems/guesswhat', text="Find Out More")
-   toolTipPortfolioListener('#project3', 'http://www.sepandassadi.com/', text="Find Out More")
+   toolTipPortfolioListener('#project1', 'http://pocketboard.herokuapp.com/', text="Pocket Board")
+   toolTipPortfolioListener('#project2', 'http://www.sepandassadi.com/', text="sepandassadi.com")
+   toolTipPortfolioListener('#project3', 'https://rubygems.org/gems/guesswhat', text="GuessWhat Ruby Gem")
    toolTipPortfolioListener('#project4', '', text="Coming Soon")
+   toolTipPortfolioListener('#project5', 'http://www.managedoffice.co/', text="ManagedOffice Website Design")
+   toolTipPortfolioListener('#project6', '', text="iTechChimp Website & Logo Design")
+   toolTipPortfolioListener('#project7', 'http://www.readybuzz.com/', text="readyBUZZ Website Design")
+   toolTipPortfolioListener('#project8', 'https://github.com/ThinkTankShark/MVC-User-Login-Sinatra-Skeleton', text="Sinatra Skeleton With Auth + CSS")
 
   // Using Tool-tip for blogs
    toolTipBlogListener('#blog1', 'http://www.sepandassadi.com/blog/how-to-create-a-lightbox-image-in-javascript', text="Create a Lightbox Image")
