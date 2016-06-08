@@ -1,1 +1,0 @@
-function init_user_edit(e){var a=e._user_tags_path,t=$.ajax({type:"GET",url:a,dataType:"json",async:!1}).responseText;$(".plugin-panel-user-tags .tagsinput").tagEditor({autocomplete:{delay:0,position:{collision:"flip"},source:$.parseJSON(t)},forceLowercase:!1,placeholder:I18n("button.add_tag")+"..."})}
