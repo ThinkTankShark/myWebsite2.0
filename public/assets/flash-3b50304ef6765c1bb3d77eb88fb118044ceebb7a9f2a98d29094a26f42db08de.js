@@ -1,1 +1,0 @@
-$(".alert").fadeOut(6e3),$(".alert-success").fadeOut(6e3),$(".alert-danger").fadeOut(6e3);
