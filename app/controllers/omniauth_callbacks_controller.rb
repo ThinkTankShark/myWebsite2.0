@@ -23,7 +23,6 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     if @user.nil?
       @user = User.create( email: @identity.email || "" )
       @identity.update_attribute( :user_id, @user.id )
-
     end
 
     if @user.email.blank? && @identity.email
