@@ -10,6 +10,10 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
+.byebug_history
+.foreman
+.rspec
+
 
 # Ignore all logfiles and tempfiles.
 /log/*
