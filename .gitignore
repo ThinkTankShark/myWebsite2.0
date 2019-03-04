@@ -12,7 +12,8 @@
 /db/*.sqlite3-journal
 .byebug_history
 .foreman
-.rspec
+.rspec\
+.DS_store
 
 
 # Ignore all logfiles and tempfiles.
@@ -24,6 +25,3 @@
 /vendor
 /app/assets/images/PSD
 config/secrets.yml
-
-# Ignore application configuration
-/config/application.yml

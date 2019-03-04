@@ -1,7 +1,7 @@
 # Personal Website
 
 ## Schema
-![schema](db/schema.jpg)
+![schema](images/schema.jpg)
 
 ## User stories
 #### Currently
@@ -22,55 +22,55 @@
 - A user can create, view, edit and delete a page for their account (with role authentication)
 
 ##Wire-frame
-![sitemap](app/assets/images/wireframes/site-map.png)
-![moodboard](app/assets/images/wireframes/Website-moodboard.png)
-![header](app/assets/images/wireframes/index-header.png)
-![blog-index](app/assets/images/wireframes/wireframe-blog-index.png)
-![blog](app/assets/images/wireframes/wireframe-blogs.png)
-![index](app/assets/images/wireframes/wireframe-index.png)
+![sitemap](images/wireframes/site-map.png)
+![moodboard](images/wireframes/Website-moodboard.png)
+![header](images/wireframes/index-header.png)
+![blog-index](images/wireframes/wireframe-blog-index.png)
+![blog](images/wireframes/wireframe-blogs.png)
+![index](images/wireframes/wireframe-index.png)
 
 ## Showcase
-![header](app/assets/images/github/header.png)
+![header](images/github/header.png)
 
 ###Homepage
-![homepage1](app/assets/images/github/Personal Website 1.png)
+![homepage1](images/github/Personal Website 1.png)
 
 - About
-![homepage2](app/assets/images/github/Personal Website 2.png)
-![homepage3](app/assets/images/github/Personal Website 3.png)
+![homepage2](images/github/Personal Website 2.png)
+![homepage3](images/github/Personal Website 3.png)
 
 - Portfolio
-![homepage4](app/assets/images/github/Personal Website 4.png)
+![homepage4](images/github/Personal Website 4.png)
 
 - Experience
-![homepage5](app/assets/images/github/Personal Website 5.png)
+![homepage5](images/github/Personal Website 5.png)
 
 - Blog
-![homepage6](app/assets/images/github/Personal Website 6.png)
+![homepage6](images/github/Personal Website 6.png)
 
 - Contact Us
-![homepage7](app/assets/images/github/Personal Website 7.png)
+![homepage7](images/github/Personal Website 7.png)
 
 - Signup
-![signup](app/assets/images/github/signup.png)
+![signup](images/github/signup.png)
 
 - Login
-![login](app/assets/images/github/login.png)
+![login](images/github/login.png)
 
 - Forgot Password
-![forgot password](app/assets/images/github/forgot_password.png)
+![forgot password](images/github/forgot_password.png)
 
 - Dashboard
-![dashboard](app/assets/images/github/dashboard.png)
+![dashboard](images/github/dashboard.png)
 
 - Create A Post
-![create post](app/assets/images/github/create_post.png)
+![create post](images/github/create_post.png)
 
 - Blog Post
-![post](app/assets/images/github/blog_post.png)
+![post](images/github/blog_post.png)
 
 ##Team
-![team](app/assets/images/github/sepandassadi.png)
+![team](images/github/sepandassadi.png)
 
 ##Presentation
 [Portfolio](https://sepandassadi.carbonmade.com/)
